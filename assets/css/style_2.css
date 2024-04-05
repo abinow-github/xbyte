@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&family=Ubuntu&display=swap');
+:root{
+  --primary_clr:#1e283f;
+  --primary_clr_logo:#3e4195;
+  --secondary_clr:#9fc03b;
+
+  --clr_1:#c1f6ed;
+  --clr_2:#02353c;
+  --clr_3:#449342;
+  --clr_4:#2eaf7d;
+  --clr_5:#3fd0c9;
+
+  --dark-blue:#1e283f;
+  --dark-green:#035642;
+
+  --text_clr:rgb(128 130 128);
+}
+/*.....................................- common styles -.........................................*/
+*{
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
+body{
+  scroll-behavior: smooth;
+  user-select: none;
+  background: var(--primary_clr) !important;
+}
+.section-1,.section-2,.section-3,.section-4,.section-5,.section-6,.abt-section-1,.abt-section-2,.abt-section-3,.enq-section-1{
+  padding: 80px 0;
+  z-index: 1;
+  position: relative;
+  background-color: white;
+}
+footer{
+  z-index: 1;
+  position: relative;
+}
+.title{
+  color: var(--primary_clr);
+}
+.text{
+  color: rgb(128 130 128);
+}
+.special-text{
+  font-weight: 600;
+  color: #70c36e;
+}
+
+
+/*-------------------------------------   shape animations ------------------------------------*/
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  /*----------------------------------------  popup animation  ---------------------------------*/
+ @-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+  
+  
+    /*.....................................- header -.........................................*/
+    header{
+      height: 115px;
+      position: relative;
+      background: url("../img/banner/Untitled-1.jpg");
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      background: var(--primary_clr);
+    }
+    header hr{
+      margin: 0 !important;
+    }
+    
+    .navbar.scrolled{
+      box-shadow: 0 4px 5px rgba(60,72,82,.25);
+    }
+    .navbar.scrolled .navlink{
+      color: yellow !important;
+    }
+    .navbar-collapse{
+      justify-content: flex-end;
+    }
+    header{
+      .navbar .nav-link{/*navbar*/
+        color: white;
+        font-size:14px;
+        font-weight:700;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 1px;
+      }
+      
+      .navbar.scrolled .nav-link{
+        color: var(--primary_clr);
+      }
+      .navbar ul{
+        justify-content: space-around;
+        width: 60%;
+      }
+       
+      .navbar{
+        width: 100%;
+        transition: 0.5s;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+      }
+      .navbar-brand{
+        width: 150px;
+      }
+      .navbar .img-1{
+        display: none;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      .navbar .img-2{
+        display: block;
+        opacity: 1;
+      }
+      .navbar.scrolled{
+        top: 0;
+        position: fixed;
+        background-color: white;
+        color: blue !important;
+      }
+      .navbar.scrolled .img-1{
+        display: block;
+        opacity: 1;
+      }
+      .navbar.scrolled .img-2{
+        display: none;
+        opacity: 0;
+        transition: 0.5s;
+      }
+  
+      .navbar .navbar-toggler{
+        border-color: rgba(255, 255, 255, 0.696) !important;
+      }
+      .navbar .navbar-toggler {
+        .navbar-toggler-icon{
+          filter: brightness(0) invert(1);
+        }
+        &:hover {
+          text-decoration: none;
+        }
+        &:focus {
+          text-decoration: none;
+          outline: 0;
+          box-shadow: none !important;
+        }
+      }
+      .navbar.scrolled .navbar-toggler{
+        .navbar-toggler-icon{
+          filter:none;
+        }
+      }
+
+      
+      .dropdown-menu{/*dropdown menu */
+        font-family: 'Noto Sans Arabic', sans-serif;
+      }
+      .dropdown-menu .col-md-6{
+        border: 0.5px solid rgb(0 0 0 / 22%);
+        padding: 0;
+      }
+      .dropdown-menu .col-md-6 a{
+        color: rgba(0, 0, 0, 0.685);
+      }
+      .dropdown-menu .col-md-6 a:hover{
+        color: white;
+        background: #3b3d8e;
+      }
+      .dropdown-menu .row{
+        width: 350px;
+        transform: translateX(10px);
+      }
+      @media screen and (min-width:992px) {
+        .dropdown-menu{
+          transform: translateX(-118px);
+        }
+      }
+      @media all and (min-width: 992px) {
+        .dropdown-menu li {
+          position: relative;
+          transition: 0.3s;
+        }
+        .dropdown-menu li:hover{
+          padding-left: 10px;
+        }
+        .navbar-nav li:hover .dropdown-menu {
+          display: block;
+        } 
+        .nav-item .submenu {
+          display: none ;
+          position: absolute;
+          left: 175%;
+          top: -7px;
+        }
+    
+        .nav-item .submenu-left {
+          right: 100%;
+          left: auto;
+        }
+    
+        .dropdown-menu > li:hover {
+          background-color: #f1f1f1;
+        }
+    
+        .dropdown li:hover > .submenu{
+          display: block !important;
+        }
+        
+        
+      }
+    
+      /* ============ desktop view .end// ============ */
+    
+      /* ============ small devices ============ */
+      @media (max-width: 991px) {
+        .dropdown-menu  li:hover > .submenu {
+          display: block;
+        }
+        .navbar-nav li:hover .dropdown-menu {
+          display: block;
+        } 
+        .dropdown li:hover > .submenu{
+          display: block !important;
+         
+        }
+        .nav-item .submenu {
+          position: absolute !important;
+          left: 62%;
+        top: 80px;
+        }
+    
+        .dropdown-menu .dropdown-menu {
+          margin-left: 0.7rem;
+          margin-right: 0.7rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    
+      /* ============ small devices .end// ============ */
+
+
+
+
+
+      .title-div{/*page title*/
+        .title{
+            color: white;
+            padding-bottom: 20px;
+            padding-left: 50px;
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+      }
+      @media screen and (max-width:650px) {
+        .title-div{
+            text-align: center;
+            padding-left: 0;
+        }.title-div .title{
+          font-size: 30px;
+          padding-left: 0;
+        }
+      }
+  
+  
+      .bg-img{/*background image*/
+        position: absolute;
+        height: 90vh;
+        bottom: 0;
+        right: 0;
+      }
+  
+  
+      @media screen and (max-width:600px) {
+        .bg-img{
+          bottom: 0;
+          top: auto;
+          width: 100%;
+          height: auto;
+          z-index: 0;
+          right: -148px;
+        }
+        .carousel-container{
+          .card{
+            padding: 0;
+          }
+          .card-title{
+            font-size: 32px;
+          }
+          .btn-div{
+            justify-content: center;
+            display: flex;
+          }
+          .col-md-8{
+            align-items: flex-start;
+          }
+        }
+      }
+  
+  
+    }
+    .navbar .navbar-brand img{/*navbar*/
+      height: 70px;
+      transition: 0.4s;
+    }
+    .navbar.scrolled .navbar-brand img{
+      height: 60px;
+    }
+  
+    @media screen and (min-width:993px) {
+      .hide_on_lg{
+        display: none !important;
+      }
+    }
+/*.................................... ................- header END -..............................................................*/
+
+
+  /* ............. course banner / also banner in all pages except index.html  ............... */
+  .course-banner{
+    height: 500px;
+    position: fixed;
+    z-index: 0;
+  background: var(--primary_clr);
+  color: white;
+  width: 100%;
+  overflow: hidden;
+  .col-md-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cnts{
+    padding-left: 20px;
+    width: 80%;
+    h2{
+        font-size: 3rem;
+    }
+  }
+  @media screen and (min-width:1757px) {
+    .cnts{
+      position: fixed;
+    top: 400px;
+    left: 150px;
+  }
+}
+  .crs-details{/* card */
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  .card{
+    .card-body{
+        padding: 10px;
+        display: flex;
+        
+        gap: 3px;
+        color: var(--primary_clr);
+    }
+    img{
+        width: 30px;
+    }
+    .sub-title{
+        font-size: 13px;
+    font-weight: 600;
+    }
+    h6{
+        color: var(--dark-green);
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+  }
+
+
+
+  .img-div img{
+    clip-path: polygon(100% 0, 38% 0, 7% 100%, 100% 100%);
+    transition: 1s;
+  }
+
+    
+  }
+  @media screen and (min-width:765px) {
+    .course-banner.ncourse{
+      height: 400px;
+    }
+  }
+
+  @media screen and (max-width:765px) {
+    .course-banner{
+      height: fit-content;
+      padding: 50px 0;
+      position: fixed;
+      z-index: 0;
+    background: var(--primary_clr);
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    .col-md-6{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .row .col-md-6:nth-child(2){
+      display: none;
+    }
+    .cnts{
+      padding-left: 20px;
+      width: 100%;
+      text-align: center;
+      h2{
+          font-size: 2.4rem;
+      }
+    }
+    .crs-details{/* card */
+      display: flex;
+      gap: 5px;
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    .card{
+      .card-body{
+          padding: 10px;
+          display: flex;
+          
+          gap: 10px;
+          color: var(--primary_clr);
+      }
+      img{
+          width: 30px;
+      }
+      .sub-title{
+          font-size: 13px;
+      font-weight: 600;
+      }
+      h6{
+          color: var(--dark-green);
+          font-weight: 600;
+          margin-bottom: 0;
+          font-size: 0.8rem;
+      }
+    }
+  
+  
+  
+    .img-div img{
+      clip-path: polygon(100% 0, 38% 0, 7% 100%, 100% 100%);
+      transition: 1s;
+    }
+  
+      
+    }
+  }
+  /* ............. course banner / also banner in all pages except index.html  END............... */
+
+
+/*.....................................- abt-section-1  -.........................................*/
+.abt-section-1{
+  margin-top: 500px;
+  .col-md-6,.col-lg-6{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .img-div{
+    width: 80%;
+  }
+  .img-div .img{
+    width: 100%;
+  }
+
+  @media screen and (max-width:766px) {
+    .reverse-row{
+      flex-direction: column-reverse;
+    }
+    .img{
+      margin-bottom: 20px;
+    }
+  }
+}
+.abt-section-1.ncourse,.enq-section-1{
+  margin-top: 350px;
+}
+@media screen and (max-width:765px) {
+  .abt-section-1.ncourse{
+    margin-top: 160px;
+  }
+}
+
+/*.....................................- footer -.........................................*/
+footer a{
+  text-decoration: none;
+}
+footer .quick-links a{/*footer quick links*/
+  font-size: 15px;
+  text-align: left;
+  width: fit-content;
+  text-transform: lowercase;
+}
+footer .quick-links li{
+  display: flex;
+  width: fit-content;
+}
+footer .quick-links{
+  width: fit-content;
+}
+footer .quick-link-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .contact{/*footer contact section*/
+  .ttl{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  i{
+    color: rgba(255, 255, 255, 0.7);
+  }
+  p{
+    font-size: 14px;
+  }
+}
+
+
+/* whatsapp and call buttons fixed */
+.whats-call-div{
+  position: fixed;
+  bottom: 0;
+  background: white;
+  display: flex;
+  z-index: 999;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0;
+  .whatsapp-btn,.call-btn{
+    text-decoration: none;
+    padding:  10px;
+    color: white;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    i{
+      font-size: x-large;
+    }
+  }
+  @media screen and (max-width:414px) {
+    .whatsapp-btn,.call-bt{
+      width: 170px;
+    }
+  }
+  .whatsapp-btn{
+    background: var(--dark-green);
+  }
+  .call-btn{
+    background: var(--dark-blue);
+  }
+}
+
+
+  /*.....................................-  enquiry.html  -.........................................*/
+  .enq-section-1{
+    .col-lg-4{
+      display: flex;
+      justify-content: center;
+    }
+    .form-div{
+      width: fit-content;
+    }
+    .form-div.ckbx{
+      width: 150px;
+    }
+    .part-1 label{
+      font-weight: 600;
+    }
+    .part-1 input{
+      width: 250px;
+      border: 0;
+      background-color: rgb(182 182 224 / 39%);
+      padding: 5px 10px;
+      margin-bottom: 20px;
+    }
+    
+    button{
+      border: 0;
+      color: white;
+      background-color: var(--primary_clr);
+      width: 150px;
+      padding: 5px 0;
+    }
+    
+
+    input[type="checkbox"] {
+      display: none;
+    }
+    input[type="checkbox"] + label {
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      display: inline-block;
+    }
+    /* Style the custom checkbox */
+    input[type="checkbox"] + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px; /* Size of the custom checkbox */
+      height: 20px; /* Size of the custom checkbox */
+      border: 2px solid #412eaf9e; 
+      background-color: #fff; 
+      border-radius: 50%; 
+    }
+    /* Add the check icon when the checkbox is checked */
+    input[type="checkbox"]:checked + label:before {
+      background-color: var(--primary_clr); 
+      border-color:var(--primary_clr);
+      content: '\2713'; 
+      font-size: 10px; 
+      color: #fff; 
+      text-align: center; 
+      line-height: 20px;
+    }
+  }
+  /*.....................................-  enquiry.html END -.........................................*/
+
+
+  /*.....................................-  courses.html  -.........................................*/
+
+  .section-2{
+    .title-row{
+      text-align: center;
+      font-weight: 600;
+    }
+    .h2{
+      font-weight: 600;
+      color: var(--primary_clr);
+    }
+    .sub-title{
+      font-weight: 600;
+    }
+    
+
+    @media screen and (min-width:700px) {
+      .col-md-6{
+        .sub-title{
+          text-align: center;
+        }
+        .sub-text{
+          text-align: center;
+        }
+      }
+    }
+
+
+
+    .sy-row{/* syllabus */
+      .col-md-6{
+        justify-content: center;
+        display: flex;
+      }
+      .syllabus_card{
+        width: 400px;
+        border: 0;
+        background: #dddef3;
+        padding: 10px;
+        margin-bottom: 30px;
+        opacity: 0;
+      }
+      .syllabus_card.reveal{
+        opacity: 1;
+     -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+      .heading{
+        font-weight: 600;
+      }
+      .num-div .h3{
+        font-weight: 600;
+        color: #70c36e;
+      }
+    }
+  }
+
+
+
+
+  /*.....................................-  Contact.html  -.........................................*/
+  .cnct-section-1{
+    form{
+      width: 80%;
+    }
+    .form-group{
+      display: flex;
+      flex-direction: column;
+    }
+    label{
+      color: #1e283f;
+      margin-bottom: 0;
+      font-size: large;
+      font-weight: bold;
+      text-transform: capitalize;
+      margin-bottom: 0;
+    }
+    input{
+      padding: 6px 0;
+      width: 100%;
+      border: 2px solid #6663632e;
+    }
+    input:focus-visible{
+    border: 2px solid blue;
+    }
+    .btn-div{
+      justify-content: center;
+      display: flex;
+    }
+    button{
+      border: 0;
+      background: #5871c9;
+      color: white;
+      padding: 5px 20px;
+    }
+
+    .col-md-6{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+  .cnct-section-2{/* contact-section 2 */
+    position: relative;
+    background: white;
+    p{
+      color: #5957579e;
+    }
+    a{
+      text-decoration: none;
+      color: #5957579e;
+    }
+  }
+
+
+
+
+
+  

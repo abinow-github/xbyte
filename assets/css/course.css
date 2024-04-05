@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&family=Ubuntu&display=swap');
+:root{
+    --primary_clr:#1e283f;
+  --primary_clr_logo:#3e4195;
+  --secondary_clr:#9fc03b;
+  --dark-green:#035642;
+
+  --clr_1:#c1f6ed;
+  --clr_2:#02353c;
+  --clr_3:#449342;
+  --clr_4:#2eaf7d;
+  --clr_5:#3fd0c9;
+
+  --text_clr:rgb(128 130 128);
+}
+/*.....................................- common styles -.........................................*/
+*{
+    font-family: 'Noto Sans Arabic', sans-serif;
+  }
+
+
+
+
+
+  /* .......................... animation .......................... */
+  @keyframes course-banner {
+    0%{
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+    50%{
+        clip-path: polygon(19% 0, 82% 0, 100% 50%, 83% 100%, 18% 100%, 0% 50%);
+        transform: scale(1.1);
+        transform: rotate(90deg);
+    }
+    100%{
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+  }
+  /* .......................... animation .......................... */
+
+
+
+
+  /* .................. section-1 ..................... */
+  .abt-section-1{
+    margin-top: 500px;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+  }
+  /* .................. section-1 END..................... */
+
+
+  /* .................. section-2 ..................... */
+  .section-2.prgrn-benfits{
+    .title-row{
+      text-align: center;
+      font-weight: 600;
+    }
+    .h2{
+      font-weight: 600;
+      color: var(--primary_clr);
+    }
+    .sub-title{
+      font-weight: 600;
+    }
+    
+
+    @media screen and (min-width:700px) {
+      .col-md-6{
+        .sub-title{
+          text-align: center;
+        }
+        .sub-text{
+          text-align: center;
+        }
+      }
+    }
+
+
+
+    .sy-row{/* syllabus */
+      .col-md-6{
+        justify-content: center;
+        display: flex;
+      }
+      .syllabus_card{
+        width: 400px;
+        border: 0;
+        background: #dddef3;
+        padding: 10px;
+        margin-bottom: 30px;
+        opacity: 0;
+      }
+      .syllabus_card.reveal{
+        opacity: 1;
+     -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+      .heading{
+        font-weight: 600;
+        color: #ee970e;
+      }
+      .num-div .h3{
+        font-weight: 600;
+        color: #70c36e;
+      }
+    }
+    .p{
+      font-size: 13px;
+    }
+  }
+  /* .................. section-2 END..................... */
+
+  /* .................. section-4 ..................... */
+  .section-2.Industries{
+    .title-row{
+      text-align: center;
+      font-weight: 600;
+    }
+    .h2{
+      font-weight: 600;
+      color: var(--primary_clr);
+    }
+    .sub-title{
+      font-weight: 600;
+    }
+    
+
+    @media screen and (min-width:700px) {
+      .col-md-6{
+        .sub-title{
+          text-align: center;
+        }
+        .sub-text{
+          text-align: center;
+        }
+      }
+    }
+
+
+
+    .sy-row{/* syllabus */
+      .col-md-6{
+        justify-content: center;
+        display: flex;
+      }
+      .syllabus_card{
+        width: 400px;
+        border: 0;
+        background-color: white;
+        padding: 15px 10px;
+        margin-bottom: 30px;
+        opacity: 0;
+        box-shadow: 0px 0px 3px 2px #00000030;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        height: fit-content;
+        align-items: center;
+
+      }
+      .syllabus_card img{
+        width: 30px;
+      }
+      .syllabus_card.reveal{
+        opacity: 1;
+     -webkit-animation: scale-in-center 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+      .heading{
+        color: var(--primary_clr);
+        font-size: 16px;
+         font-weight: 500;
+        line-height: 22px;
+        margin: 0;
+      }
+      .num-div .h3{
+        font-weight: 600;
+        color: #70c36e;
+      }
+    }
+    .p{
+      font-size: 13px;
+    }
+  }
+  /* .................. section-2 END..................... */
+
+  /* .................. section-5 ..................... */
+  .section-2.feature{
+    .title-row{
+      text-align: center;
+      font-weight: 600;
+    }
+    .h2{
+      font-weight: 600;
+      color: var(--primary_clr);
+    }
+    .sub-title{
+      font-weight: 600;
+    }
+    
+
+    @media screen and (min-width:700px) {
+      .col-md-6{
+        .sub-title{
+          text-align: center;
+        }
+        .sub-text{
+          text-align: center;
+        }
+      }
+    }
+
+
+
+    .sy-row{/* syllabus */
+      .col-md-6{
+        justify-content: center;
+        display: flex;
+      }
+      .syllabus_card{
+        width: 400px;
+        border: 0;
+        background-color: white;
+        padding: 0;
+        margin-bottom: 30px;
+        opacity: 0;
+        box-shadow: 0px 0px 3px 2px #00000030;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        height: fit-content;
+        align-items: center;
+
+      }
+      .syllabus_card img{
+        width: 30px;
+      }
+      .syllabus_card.reveal{
+        opacity: 1;
+     -webkit-animation: scale-in-center 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+      .heading{
+        color: var(--primary_clr);
+        font-size: 16px;
+         font-weight: 500;
+        line-height: 22px;
+        margin: 0;
+      }
+      .num-div{
+        padding: 15px 20px 15px 15px;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        background: #a0c03d52;
+      }
+    }
+    .p{
+      font-size: 13px;
+    }
+  }
+  /* .................. section-5 END..................... */
+
+
+
+  /* .................. section-6 ..................... */
+  .section-2.course-content{
+   
+    .card{
+      padding-top: 15px;
+      margin-bottom: 20px;
+      background: #d6e1b869;
+      border: 0;
+      .card-title{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--primary_clr);
+      }
+    
+    ul li {
+      padding-left: 20px; 
+      background: url('../img/icons/course/right-arrow.png') no-repeat left center; 
+      background-size: 15px; 
+      list-style-type: none; 
+      color: #1e283fa1;
+      background-position-y: 4px;
+      margin: 15px 0;
+    }
+
+  }
+    
+  }
+  /* .................. section-6 END..................... */
