@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thiranz</title>
+    <title>Xbyte Tera Solutions</title>
     <!--favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 
     <!--css-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -87,15 +93,22 @@
   /* ============ small devices .end// ============ */
 </style>
 <body>
+ <!-- preloader -->
+ <div id="preloader" class="w-100">
+  <div class="logo-div">
+    <img src="preloader-logo.png" class="w-100" alt="" srcset="">
+  </div>
+ </div>
  
+ <!-- preloader END -->
   
   </div>
   
       <!--...............- header -...................-->
-      <header>
+      <header id="hdr">
         <nav class="navbar navbar-expand-lg p-3 ">
           <div class="container">
-            <a class="navbar-brand d-flex" href="index.html"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" alt="" srcset="" class="logo-img img-1">
+            <a class="navbar-brand d-flex" href="index.html"><img src="assets/img/logo/xbyte tera logo3.png" alt="" srcset="" class="logo-img img-1">
               <div class="experience-div d-flex">
                 <h2>10 +</h2> <span>Years</span>
               </div>
@@ -174,13 +187,13 @@
 
         
 
-        <div class="container header-banner-div"><!-- banner -->
-          <div class="row h-100">
+        <div class="container header-banner-div" id="banner"><!-- banner -->
+          <div class="row h-100 banner-row">
             <div class="col-md-6">
               <div class="cnt-div">
-                <div class="header-title">
-                  <h2>Ready to <br> Transfer Your Career</h2>
-                    <h5>Empowering a new generation of professionals.</h5>
+                <div class="header-title">                
+               <h2>Ignite Your Future <br> with Us</h2>
+                 <h5>Empowering the Leaders of Tomorrow.</h5>
                 </div>
 
                 <div class="header-icons-div d-flex">
@@ -189,7 +202,7 @@
                       <img src="assets/img/icons/header-banner-icon-1.png" class="h-100" alt="" srcset="">
                     </div>
                     <div class="card-body">
-                      <h4 class="mb-0">10,000 +</h4>
+                      <h4 class="mb-0">500 +</h4>
                       <p>Placements</p>
                     </div>
                   </div>
@@ -199,7 +212,7 @@
                       <img src="assets/img/icons/header-banner-icon-2.png" class="h-100" alt="" srcset="">
                     </div>
                     <div class="card-body">
-                      <h4 class="mb-0">20,000 +</h4>
+                      <h4 class="mb-0">2000 +</h4>
                       <p>Career Transitions</p>
                     </div>
                   </div>
@@ -220,17 +233,23 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="img-div">
-                <img src="assets/img/banner/banner-4-blue-shape.png" alt="" class=" img img-blue" srcset="">
-                <img src="assets/img/banner/banner-4-green-bg.png" alt="" class=" img img-green" srcset="">
-                <img src="assets/img/banner/banner-4-model.png" alt="" class=" img img-model" srcset="">
-                <img src="assets/img/banner/banner-4-white-bg.png" alt="" class=" img img-white" srcset="">
-                <div class="shape"></div>
-                <div class="shape"></div>
-                <div class="shape"></div>
-                <div class="shape"></div>
+            <div class="col-md-6 bnr-img-prt"><!-- banner image section -->
+              
+              <div class="img-div row w-80 mx-auto">
+                <div class="col-6">
+                  <div class="card"><img src="assets/img/banner/bnr-img1.png" alt="" class="img"><img src="assets/img/shape/circle.png" alt="" class="shape"></div>
+                </div>
+                <div class="col-6">
+                  <div class="card"><img src="assets/img/banner/bnr-img2.png" alt="" class="img"><img src="assets/img/shape/square.png" alt="" class="shape"></div>
+                </div>
+                <div class="col-6">
+                  <div class="card"><img src="assets/img/banner/bnr-img3.png" alt="" class="img"><img src="assets/img/shape/squre part.png" alt="" class="shape"></div>
+                </div>
+                <div class="col-6">
+                  <div class="card"><img src="assets/img/banner/bnr-img4.png" alt="" class="img"><img src="assets/img/shape/line.png" alt="" class="shape"></div>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -280,6 +299,19 @@
       </div>
       <!-- course menu in mobile END -->
       <!--.......................................................- header END -..........................................................-->
+      <script>
+        /////////preloader function
+      var load = document.getElementById("preloader");
+      let header = document.getElementById("hdr");
+      let bnr = document.getElementById('banner');
+      window.onload = function () {
+            setTimeout(function () {
+              load.classList.add('hide');
+              bnr.classList.add('show');
+              load.classList.remove('show');
+            }, 500);
+      };
+       </script>
       
 <div class="all-section-hide">
 <!--...............- section-1 about -...................-->
@@ -289,32 +321,19 @@
 
       <div class="col-md-6">
         <div class="img-div">
-          <img src="assets/img/about/about1.jpg" alt="" srcset="" class="img">
-          <img src="assets/img/shape/shape-2.png" alt="" srcset="" class="img-abs">
-          
+          <img src="assets/img/about/about1.jpg" class="img w-100" alt="" srcset="">
         </div>
       </div>
 
       <div class="col-md-6">
         <div class="cnt-div">
-          <h5 class="ab-title hide_on_sm mb-4">About Thiranz</h5>
-          <p class="text">Welcome to Thiranz Tech Solutions, where innovation meets excellence in the dynamic landscape of technology education. Established in 2013, our journey began in the vibrant city of Chennai, India, with a vision to empower individuals with cutting-edge skills and knowledge to thrive in the ever-evolving world of technology.</p>
-          <p class="text hide_on_sm">Thiranz Tech Solutions has since grown to become a leading education provider, extending its reach with branches in the bustling cities of Coimbatore and Trichy. Our commitment to quality education and a holistic learning experience has positioned us as a trusted destination for those aspiring to excel in the fields of SAP, IT, and Multimedia.</p>
+          <p class="text">XBYTE TERA SOLUTIONS PRIVATE LIMITED is a Corporate Training & Consulting company since 2023. We specialize in Training and Human Capital Development, for both management and technical skills. In addition to the extensive industrial experience in human resources management, we have a pool of experts in our faculty specializing in specific areas that serve organizations of numerous industries. We work together with companies as smart partnership in providing hands-on solutions to help by giving them the best and suitable trained human resource, solve day to day business challenges by developing their human capital. – All with the help and guidance of our multifaceted organization.</p>
           <a href="about.html" class="btn">Read More</a><br>
 
           
         </div>
       </div>
 
-    </div>
-    <div class="row second-row pt-5">
-      <div class="title"><h5 style="font-weight: 600;"> Certificates </h5></div>
-    <div class="col-lg-2 col-md-3 col-6"><div class="card"><img src="assets/img/logo/certificate/sap.png"></div></div>
-    <div class="col-lg-2 col-md-3 col-6"><div class="card"><img src="assets/img/logo/certificate/skill-india.png"></div></div>
-    <div class="col-lg-2 col-md-3 col-6"><div class="card"><img src="assets/img/logo/certificate/ascode.png"></div></div>
-    <div class="col-lg-2 col-md-3 col-6"><div class="card"><img src="assets/img/logo/certificate/ncdc.png"></div></div>
-    <div class="col-lg-2 col-md-3 col-6"><div class="card"><img src="assets/img/logo/certificate/ministry of corporate affairs.png"></div></div>
-    <div class="col-lg-2 col-md-3 col-6"><div class="card"><img src="assets/img/logo/certificate/iso.png"></div></div>
     </div>
   </div>
 </section>
@@ -355,7 +374,7 @@
             <img src="assets/img/icons/schedule.png" alt="" srcset="" class="img">
           </div>
           <div class="cnt-div">
-            <h3 class="h3">1000 +</h3>
+            <h3 class="h3">500 +</h3>
             <h4 class="h4">SCHEDULES</h4>
           </div>
         </div>
@@ -383,120 +402,54 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="section-3 hide-on-mobile"><!-- for large device -->
+<section class="section-3">
   <div class="container p-0">
     <div class="row title-row">
       <h2 class="h2">OUR COURSES </h2>
     </div>
-    <div class="row hide_on_sm"><!-- large device -->
+    <div class="row">
 
-      <div class="col-md-4 col-lg-3 map-container">
-        <div class="course-cat-div ">
-          <div class="inner-basic division-map div-toggle" data-target=".division-details" id="divisiondetail">
-            <button class="menu map-point-sm active" data-show=".crs-1"><span>ALL</span> <i class="fa-solid fa-caret-right"></i></button>
-            <button class="menu map-point-sm" data-show=".crs-2"><span>SAP</span> <i class="fa-solid fa-caret-right"></i></button>
-            <button class="menu map-point-sm" data-show=".crs-3"><span>IT SOFTWARES</span> <i class="fa-solid fa-caret-right"></i></button>
-            <button class="menu map-point-sm" data-show=".crs-4"><span>MULTIMEDIA</span> <i class="fa-solid fa-caret-right"></i></button>
-            <button class="menu map-point-sm" data-show=".crs-5"><span>LOGISTICS</span> <i class="fa-solid fa-caret-right"></i></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-8 col-lg-9 map-container p-0 ">
+      <div class="col-md-12 col-lg-12 map-container p-0 ">
         <div class="row initialmsg crs crs-1 crs-anime">
-      <div class="col-md-6 col-lg-4 scroll-anime"><!-- sap -->
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/sap.jpg" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">SAP</div>
-            <p class="p">SAP certification is becoming increasingly
-              valuable to employees and businesses as
-              SAP continues to add new applications,
-              tools and interfaces for nearly every area of
-              business management.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more"  onclick="course(1 )">Know More</button>
-                </div>
-              </div>
-            </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime"><!-- it softwares -->
+
+      <div class="col-md-6 col-lg-6 scroll-anime">
         <div class="card">
           <div class="img-div">
             <img src="assets/img/course/java.jpg" alt="" srcset="">
           </div>
           <div class="card-body">
+            <span class="crs-count">course 1</span>
             <div class="first-part">
-              <div class="card-title">JAVA</div>
-            <p class="p">Java is a versatile and widely-used
-              programming language renowned for its
-              platform independence, object-oriented
-              structure, and robust capabilities.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
+              <div class="card-title">CERTIFICATE IN FINANCE AND ACCOUNTS with advanced Tools</div>
               <div class="rating mb-2">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star pr-2"></i>
-                4.9
+              </div>
+            <ul>
+              <li><span>Financial Accounting</span></li>
+              <li><span>Financial Management</span></li>
+              <li><span>Management Accounting</span></li>
+              <li><span>Auditing</span></li>
+              <li><span>Budgetting</span></li>
+              <li><span>Logistics Accounting</span></li>
+              <li><span>Branch Accounting</span></li>
+              <li><span>GST & VAT(GCC)</span></li>
+              <li><span>Incometax & TDS</span></li>
+              <li><span>ESI & PF</span></li>
+            </ul>
+            </div>
+
+            <div class="second-part">
+              <div class="tools">
+              <img src="assets/img/logo/tools/tally prime.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/Microsoft_Excel-Logo.wine.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/zoho-books.webp" alt="" class="tool">
+              <img src="assets/img/logo/tools/Marge ERP.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/qb.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/peachtree-logo.png" alt="" class="tool">
               </div>
               <div class="buttons-div row">
                 <div class="col-lg-6 col-6">
@@ -511,27 +464,44 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
+      <div class="col-md-6 col-lg-6  scroll-anime">
         <div class="card">
           <div class="img-div">
             <img src="assets/img/course/python-bnr.jpg" class="w-100" alt="" srcset="">
           </div>
           <div class="card-body">
+            <span class="crs-count">course 2</span>
             <div class="first-part">
-              <div class="card-title">PYTHON</div>
-            <p class="p">Python is a programming language that is
-              interpreted and high-level. It is known for its
-              versatility, readability, and simplicity.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
+              <div class="card-title">DIPLOMA IN FINANCE AND ACCOUNTS with advanced Tools</div>
               <div class="rating mb-2">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star pr-2"></i>
-                4.9
+              </div>
+            <ul>
+              <li><span>Financial Accounting</span></li>
+              <li><span>Financial Management</span></li>
+              <li><span>Management Accounting</span></li>
+              <li><span>Auditing</span></li>
+              <li><span>Budgetting</span></li>
+              <li><span>Logistics Accounting</span></li>
+              <li><span>Branch Accounting</span></li>
+              <li><span>GST & VAT(GCC)</span></li>
+              <li><span>Incometax & TDS</span></li>
+              <li><span>ESI & PF</span></li>
+            </ul>
+            </div>
+            <div class="second-part">
+              <div class="tools">
+              <img src="assets/img/logo/tools/tally prime.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/SAP FICO (S4HANA).png" alt="" class="tool">
+              <img src="assets/img/logo/tools/Microsoft_Excel-Logo.wine.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/zoho-books.webp" alt="" class="tool">
+              <img src="assets/img/logo/tools/Marge ERP.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/qb.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/peachtree-logo.png" alt="" class="tool">
               </div>
               <div class="buttons-div row">
                 <div class="col-lg-6 col-6">
@@ -546,27 +516,46 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
+      <div class="col-md-6 col-lg-6  scroll-anime">
         <div class="card">
           <div class="img-div">
             <img src="assets/img/course/fullstack-bnr.jpg" class="w-100" alt="" srcset="">
           </div>
           <div class="card-body">
+            <span class="crs-count">course 3</span>
             <div class="first-part">
-              <div class="card-title">FULL STACK</div>
-            <p class="p">Python is a programming language that is
-              interpreted and high-level. It is known for its
-              versatility, readability, and simplicity.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
+              <div class="card-title">ADVANCED DIPLOMA IN FINANCE AND ACCOUNTS with advanced Tools & Al</div>
               <div class="rating mb-2">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star pr-2"></i>
-                4.9
+              </div>
+            <ul>
+              <li><span>Financial Accounting</span></li>
+              <li><span>Financial Management</span></li>
+              <li><span>Management Accounting</span></li>
+              <li><span>Auditing</span></li>
+              <li><span>Budgetting</span></li>
+              <li><span>Logistics Accounting</span></li>
+              <li><span>Branch Accounting</span></li>
+              <li><span>GST & VAT(GCC)</span></li>
+              <li><span>Incometax & TDS</span></li>
+              <li><span>ESI & PF</span></li>  
+              <li><span>IFRS</span></li>
+            </ul>
+            </div>
+            <div class="second-part">
+              <div class="tools">
+              <img src="assets/img/logo/tools/tally prime.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/SAP FICO (S4HANA).png" alt="" class="tool">
+              <img src="assets/img/logo/tools/Microsoft_Excel-Logo.wine.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/zoho-books.webp" alt="" class="tool">
+              <img src="assets/img/logo/tools/Marge ERP.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/qb.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/peachtree-logo.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/accrobiz.png" alt="" class="tool">
               </div>
               <div class="buttons-div row">
                 <div class="col-lg-6 col-6">
@@ -581,28 +570,47 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
+      <div class="col-md-6 col-lg-6  scroll-anime">
         <div class="card">
           <div class="img-div">
             <img src="assets/img/course/web-design-bnr.jpg" class="w-100" alt="" srcset="">
           </div>
           <div class="card-body">
+            <span class="crs-count">course 4</span>
             <div class="first-part">
-              <div class="card-title">WEB DESIGNING</div>
-            <p class="p">Web designing involves the process of
-              creating and structuring the visual elements
-              of a website, focusing on aesthetics, user
-              experience, and overall functionality.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
+              <div class="card-title">POST GRAGUATE DIPLOMA IN FINANCE AND ACCOUNTS with advanced Tools & Al</div>
               <div class="rating mb-2">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star pr-2"></i>
-                4.9
+              </div>
+              <ul>
+                <li><span>Financial Accounting</span></li>
+                <li><span>Financial Management</span></li>
+                <li><span>Management Accounting</span></li>
+                <li><span>Auditing</span></li>
+                <li><span>Budgetting</span></li>
+                <li><span>Logistics Accounting</span></li>
+                <li><span>Branch Accounting</span></li>
+                <li><span>GST & VAT(GCC)</span></li>
+                <li><span>Incometax & TDS</span></li>
+                <li><span>ESI & PF</span></li>  
+                <li><span>IFRS</span></li>
+              </ul>
+            </div>
+            <div class="second-part">
+              <div class="tools">
+              <img src="assets/img/logo/tools/tally prime.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/SAP FICO (S4HANA).png" alt="" class="tool">
+              <img src="assets/img/logo/tools/Microsoft_Excel-Logo.wine.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/zoho-books.webp" alt="" class="tool">
+              <img src="assets/img/logo/tools/Marge ERP.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/qb.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/peachtree-logo.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/accrobiz.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/Oracle-Logo.png" alt="" class="tool">
               </div>
               <div class="buttons-div row">
                 <div class="col-lg-6 col-6">
@@ -617,35 +625,55 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
+      <div class="col-md-6 col-lg-6  scroll-anime">
         <div class="card">
           <div class="img-div">
-            <img src="assets/img/course/data-science-bnr.jpg" class="w-100" alt="" srcset="">
+            <img src="assets/img/course/web-design-bnr.jpg" class="w-100" alt="" srcset="">
           </div>
           <div class="card-body">
+            <span class="crs-count">course 5</span>
             <div class="first-part">
-              <div class="card-title">DATA SCIENCE</div>
-            <p class="p">Data Science is an interdisciplinary field that
-              involves extracting actionable insights and
-              knowledge from both structured and
-              unstructured data.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
+              <div class="card-title">POST GRAGUATE DIPLOMA IN FINANCE AND ACCOUNTS with advanced Tools & Al and IELTS training.</div>
               <div class="rating mb-2">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star pr-2"></i>
-                4.9
+              </div>
+              <ul>
+                <li><span>Financial Accounting</span> </li>
+                <li><span>Financial Management</span></li>
+                <li><span>Management Accounting</span></li>
+                <li><span>Auditing</span></li>
+                <li><span>Budgetting</span></li>
+                <li><span>Logistics Accounting</span></li>
+                <li><span>Branch Accounting</span></li>
+                <li><span>GST & VAT(GCC)</span></li>
+                <li><span>Incometax & TDS</span></li>
+                <li><span>ESI & PF</span></li>
+                <li><span>IFRS</span></li>
+                <li><span>IELTS Trainig.</span></li>
+              </ul>
+            </div>
+            <div class="second-part">
+              <div class="tools">
+              <img src="assets/img/logo/tools/tally prime.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/SAP FICO (S4HANA).png" alt="" class="tool">
+              <img src="assets/img/logo/tools/Microsoft_Excel-Logo.wine.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/zoho-books.webp" alt="" class="tool">
+              <img src="assets/img/logo/tools/Marge ERP.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/qb.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/peachtree-logo.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/accrobiz.png" alt="" class="tool">
+              <img src="assets/img/logo/tools/Oracle-Logo.png" alt="" class="tool">
               </div>
               <div class="buttons-div row">
                 <div class="col-lg-6 col-6">
                   <button class="apply" onclick="apply(1)">Apply Now</button>
                 </div>
                 <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(5)">Know More</button>
+                  <button class="more" onclick="course(7)">Know More</button>
                 </div>
               </div>
             </div>
@@ -653,1052 +681,15 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/Data Analytics-bnr.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">DATA ANALYTICS</div>
-            <p class="p">Data Analytics involves the systematic
-              analysis of raw data to uncover meaningful
-              patterns, insights, and trends that can inform
-              decision-making and drive business
-              strategies.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(6)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/software-testing-bnr.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">SOFTWARE TESTING</div>
-            <p class="p">Software testing plays a vital role in the software development life cycle as it involves a
-              systematic evaluation of a software application to detect any defects or errors.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(15)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/aws-bnr.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">AWS</div>
-            <p class="p">Amazon Web Services (AWS) is a highly popular and extensively utilized cloud computing
-              platform offered by Amazon.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(16)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime"><!-- multimedia -->
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/photoshop-bnr.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">PHOTOSHOP</div>
-            <p class="p">Adobe Photoshop is a powerful and widely
-              used graphic editing software that enables
-              users to manipulate and enhance digital
-              images.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(8)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/illustrator-bnr.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">ILLUSTRATOR</div>
-            <p class="p">Adobe Illustrator is a vector graphics editing
-              software developed by Adobe Inc., designed
-              for creating and manipulating scalable
-              illustrations and artworks.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(9)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/coreldraw-bnr.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">CorelDRAW</div>
-            <p class="p">CorelDRAW is a vector graphics editor that
-              provides powerful tools for designing and
-              creating illustrations, logos, and layouts.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(10)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/animation-bnr.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">ANIMATION</div>
-            <p class="p">Animation is the process of creating the
-              illusion of motion through a rapid display of
-              images, frames, or objects.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(11)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/graphic-design-bnr.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">GRAPHIC DESIGN</div>
-            <p class="p">Graphic design is the art of visually
-              communicating ideas and information
-              through a combination of images,
-              typography, and layout.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(12)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/video-editing-bnr.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">VIDEO EDITING</div>
-            <p class="p">Video editing is the process of manipulating
-              and rearranging video clips to create a
-              cohesive and compelling visual narrative.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(13)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime">
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/course/ui_ux-bnr.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">ui ux</div>
-            <p class="p">UI/UX Crafting a visually appealing and
-              intuitively designed digital experience,
-              prioritizing both aesthetic elements and user
-              satisfaction throughout the interaction.</p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(14)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 scroll-anime"><!-- logistics -->
-        <div class="card">
-          <div class="img-div">
-            <img src="assets/img/banner/course/logistics.jpg" class="w-100" alt="" srcset="">
-          </div>
-          <div class="card-body">
-            <div class="first-part">
-              <div class="card-title">LOGISTICS</div>
-            <p class="p">Logistics and supply chain management encompass the strategic coordination and
-              execution of activities involved in the efficient movement </p>
-            </div>
-            <div class="second-part">
-              <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-              <div class="rating mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star pr-2"></i>
-                4.9
-              </div>
-              <div class="buttons-div row">
-                <div class="col-lg-6 col-6">
-                  <button class="apply" onclick="apply(1)">Apply Now</button>
-                </div>
-                <div class="col-lg-6 col-6">
-                  <button class="more" onclick="course(17)">Know More</button>
-                </div>
-              </div>
-            </div>
-            <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-          </div>
-        </div>
-      </div>
-      <!-- paste this -->
+
+      
 
        </div>
-       <div class="row crs crs-2 hide">
-        <div class="col-md-6 col-lg-4 scroll-anime"><!-- sap -->
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/sap.jpg" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">SAP</div>
-              <p class="p">SAP certification is becoming increasingly
-                valuable to employees and businesses as
-                SAP continues to add new applications,
-                tools and interfaces for nearly every area of
-                business management.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more"  onclick="course(1 )">Know More</button>
-                  </div>
-                </div>
-              </div>
-                <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-       </div>
-
-       <div class="row crs crs-3 hide">
-        <div class="col-md-6 col-lg-4 scroll-anime"><!-- it softwares -->
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/java.jpg" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">JAVA</div>
-              <p class="p">Java is a versatile and widely-used
-                programming language renowned for its
-                platform independence, object-oriented
-                structure, and robust capabilities.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(2)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/python-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">PYTHON</div>
-              <p class="p">Python is a programming language that is
-                interpreted and high-level. It is known for its
-                versatility, readability, and simplicity.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(3)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/fullstack-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">FULL STACK</div>
-              <p class="p">Python is a programming language that is
-                interpreted and high-level. It is known for its
-                versatility, readability, and simplicity.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(4)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/web-design-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">WEB DESIGNING</div>
-              <p class="p">Web designing involves the process of
-                creating and structuring the visual elements
-                of a website, focusing on aesthetics, user
-                experience, and overall functionality.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(7)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/data-science-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">DATA SCIENCE</div>
-              <p class="p">Data Science is an interdisciplinary field that
-                involves extracting actionable insights and
-                knowledge from both structured and
-                unstructured data.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(5)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/Data Analytics-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">DATA ANALYTICS</div>
-              <p class="p">Data Analytics involves the systematic
-                analysis of raw data to uncover meaningful
-                patterns, insights, and trends that can inform
-                decision-making and drive business
-                strategies.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(6)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/software-testing-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">SOFTWARE TESTING</div>
-              <p class="p">Software testing plays a vital role in the software development life cycle as it involves a
-                systematic evaluation of a software application to detect any defects or errors.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(15)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/aws-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">AWS</div>
-              <p class="p">Amazon Web Services (AWS) is a highly popular and extensively utilized cloud computing
-                platform offered by Amazon.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(16)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-       </div>
-
-       <div class="row crs crs-4 hide">
-        <div class="col-md-6 col-lg-4 scroll-anime"><!-- multimedia -->
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/photoshop-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">PHOTOSHOP</div>
-              <p class="p">Adobe Photoshop is a powerful and widely
-                used graphic editing software that enables
-                users to manipulate and enhance digital
-                images.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(8)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/illustrator-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">ILLUSTRATOR</div>
-              <p class="p">Adobe Illustrator is a vector graphics editing
-                software developed by Adobe Inc., designed
-                for creating and manipulating scalable
-                illustrations and artworks.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(9)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/coreldraw-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">CorelDRAW</div>
-              <p class="p">CorelDRAW is a vector graphics editor that
-                provides powerful tools for designing and
-                creating illustrations, logos, and layouts.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(10)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/animation-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">ANIMATION</div>
-              <p class="p">Animation is the process of creating the
-                illusion of motion through a rapid display of
-                images, frames, or objects.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(11)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/graphic-design-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">GRAPHIC DESIGN</div>
-              <p class="p">Graphic design is the art of visually
-                communicating ideas and information
-                through a combination of images,
-                typography, and layout.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(12)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/video-editing-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">VIDEO EDITING</div>
-              <p class="p">Video editing is the process of manipulating
-                and rearranging video clips to create a
-                cohesive and compelling visual narrative.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(13)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 scroll-anime">
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/course/ui_ux-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">ui ux</div>
-              <p class="p">UI/UX Crafting a visually appealing and
-                intuitively designed digital experience,
-                prioritizing both aesthetic elements and user
-                satisfaction throughout the interaction.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(14)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-       </div>
-
-       <div class="row crs crs-5 hide">
-        <div class="col-md-6 col-lg-4 scroll-anime"><!-- logistics -->
-          <div class="card">
-            <div class="img-div">
-              <img src="assets/img/banner/course/logistics.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">LOGISTICS</div>
-              <p class="p">Logistics and supply chain management encompass the strategic coordination and
-                execution of activities involved in the efficient movement </p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(17)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-       </div>
-
       </div>
 
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
   $(document).on('click', '.map-point-sm', function() {
@@ -1728,1238 +719,7 @@ $(this).addClass("active").siblings().removeClass("active");
 removeRevealClass();
 </script>
 
-<section class="section-3 hide-on-lap"><!-- for small device -->
-  <div class="container">
-    <div class="row title-row">
-      <h2 class="h2">OUR COURSES </h2>
-    </div>
-    <div class="row">
-      <div class="crs-cat-div">
 
-        <button class="accordion menu active">ALL <i class="fa-solid fa-caret-right"></i></button>
-        <div class="panel" style="max-height: fit-content;">
-
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/sap.jpg" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">SAP</div>
-              <p class="p">Java is a versatile and widely-used
-                programming language renowned for its
-                platform independence, object-oriented
-                structure, and robust capabilities.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <a href="https://www.thiranzerptraininginstitute.com" style="text-decoration: none;" onclick="course(1)"><button class="more">Know More</button></a>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-          <!-- it softwares -->
- 
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/java.jpg" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">JAVA</div>
-      <p class="p">Java is a versatile and widely-used
-        programming language renowned for its
-        platform independence, object-oriented
-        structure, and robust capabilities.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(2)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-  
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/python-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">PYTHON</div>
-      <p class="p">Python is a programming language that is
-        interpreted and high-level. It is known for its
-        versatility, readability, and simplicity.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(3)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-  
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/fullstack-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">FULL STACK</div>
-      <p class="p">Python is a programming language that is
-        interpreted and high-level. It is known for its
-        versatility, readability, and simplicity.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(4)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
- 
-
- 
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/web-design-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">WEB DESIGNING</div>
-      <p class="p">Web designing involves the process of
-        creating and structuring the visual elements
-        of a website, focusing on aesthetics, user
-        experience, and overall functionality.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(7)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
-
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/data-science-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">DATA SCIENCE</div>
-      <p class="p">Data Science is an interdisciplinary field that
-        involves extracting actionable insights and
-        knowledge from both structured and
-        unstructured data.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(5)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
-
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/Data Analytics-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">DATA ANALYTICS</div>
-      <p class="p">Data Analytics involves the systematic
-        analysis of raw data to uncover meaningful
-        patterns, insights, and trends that can inform
-        decision-making and drive business
-        strategies.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(6)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
-
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/software-testing-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">SOFTWARE TESTING</div>
-      <p class="p">Software testing plays a vital role in the software development life cycle as it involves a
-        systematic evaluation of a software application to detect any defects or errors.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(15)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
-
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/aws-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">AWS</div>
-      <p class="p">Amazon Web Services (AWS) is a highly popular and extensively utilized cloud computing
-        platform offered by Amazon.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(16)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-<!-- multimedia -->
- 
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/photoshop-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">PHOTOSHOP</div>
-      <p class="p">Adobe Photoshop is a powerful and widely
-        used graphic editing software that enables
-        users to manipulate and enhance digital
-        images.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(8)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
-
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/illustrator-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">ILLUSTRATOR</div>
-      <p class="p">Adobe Illustrator is a vector graphics editing
-        software developed by Adobe Inc., designed
-        for creating and manipulating scalable
-        illustrations and artworks.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(9)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
-
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/coreldraw-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">CorelDRAW</div>
-      <p class="p">CorelDRAW is a vector graphics editor that
-        provides powerful tools for designing and
-        creating illustrations, logos, and layouts.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(10)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
-
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/animation-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">ANIMATION</div>
-      <p class="p">Animation is the process of creating the
-        illusion of motion through a rapid display of
-        images, frames, or objects.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(11)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
-
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/graphic-design-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">GRAPHIC DESIGN</div>
-      <p class="p">Graphic design is the art of visually
-        communicating ideas and information
-        through a combination of images,
-        typography, and layout.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(12)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
- 
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/video-editing-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">VIDEO EDITING</div>
-      <p class="p">Video editing is the process of manipulating
-        and rearranging video clips to create a
-        cohesive and compelling visual narrative.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(13)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
-
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/course/ui_ux-bnr.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">ui ux</div>
-      <p class="p">UI/UX Crafting a visually appealing and
-        intuitively designed digital experience,
-        prioritizing both aesthetic elements and user
-        satisfaction throughout the interaction.</p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(14)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-<!-- logistics -->
- 
-  <div class="card mt-4">
-    <div class="img-div">
-      <img src="assets/img/banner/course/logistics.jpg" class="w-100" alt="" srcset="">
-    </div>
-    <div class="card-body">
-      <div class="first-part">
-        <div class="card-title">LOGISTICS</div>
-      <p class="p">Logistics and supply chain management encompass the strategic coordination and
-        execution of activities involved in the efficient movement </p>
-      </div>
-      <div class="second-part">
-        <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-        <div class="rating mb-2">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star pr-2"></i>
-          4.9
-        </div>
-        <div class="buttons-div row">
-          <div class="col-lg-6 col-6">
-            <button class="apply" onclick="apply(1)">Apply Now</button>
-          </div>
-          <div class="col-lg-6 col-6">
-            <button class="more" onclick="course(17)">Know More</button>
-          </div>
-        </div>
-      </div>
-      <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-    </div>
-  </div>
-
-        </div>
-<!-- accordion-1 (all) END -->
-
-
-
-
-        <button class="accordion menu">SAP <i class="fa-solid fa-caret-right"></i></button>
-        <div class="panel">
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/sap.jpg" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">SAP</div>
-              <p class="p">Java is a versatile and widely-used
-                programming language renowned for its
-                platform independence, object-oriented
-                structure, and robust capabilities.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <a href="https://www.thiranzerptraininginstitute.com" style="text-decoration: none;" onclick="course(1)"><button class="more">Know More</button></a>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <button class="accordion menu">IT SOFTWARES <i class="fa-solid fa-caret-right"></i></button>
-        <div class="panel">
-          <!-- it softwares -->
-  
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/java.jpg" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">JAVA</div>
-              <p class="p">Java is a versatile and widely-used
-                programming language renowned for its
-                platform independence, object-oriented
-                structure, and robust capabilities.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(2)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-          
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/python-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">PYTHON</div>
-              <p class="p">Python is a programming language that is
-                interpreted and high-level. It is known for its
-                versatility, readability, and simplicity.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(3)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-          
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/fullstack-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">FULL STACK</div>
-              <p class="p">Python is a programming language that is
-                interpreted and high-level. It is known for its
-                versatility, readability, and simplicity.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(4)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-         
-        
-         
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/web-design-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">WEB DESIGNING</div>
-              <p class="p">Web designing involves the process of
-                creating and structuring the visual elements
-                of a website, focusing on aesthetics, user
-                experience, and overall functionality.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(7)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        
-        
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/data-science-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">DATA SCIENCE</div>
-              <p class="p">Data Science is an interdisciplinary field that
-                involves extracting actionable insights and
-                knowledge from both structured and
-                unstructured data.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(5)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        
-        
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/Data Analytics-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">DATA ANALYTICS</div>
-              <p class="p">Data Analytics involves the systematic
-                analysis of raw data to uncover meaningful
-                patterns, insights, and trends that can inform
-                decision-making and drive business
-                strategies.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(6)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        
-        
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/software-testing-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">SOFTWARE TESTING</div>
-              <p class="p">Software testing plays a vital role in the software development life cycle as it involves a
-                systematic evaluation of a software application to detect any defects or errors.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(15)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        
-        
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/aws-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">AWS</div>
-              <p class="p">Amazon Web Services (AWS) is a highly popular and extensively utilized cloud computing
-                platform offered by Amazon.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(16)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <button class="accordion menu">MULTIMEDIA <i class="fa-solid fa-caret-right"></i></button>
-        <div class="panel">
-          <!-- multimedia -->
-  
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/photoshop-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">PHOTOSHOP</div>
-              <p class="p">Adobe Photoshop is a powerful and widely
-                used graphic editing software that enables
-                users to manipulate and enhance digital
-                images.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(8)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        
-        
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/illustrator-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">ILLUSTRATOR</div>
-              <p class="p">Adobe Illustrator is a vector graphics editing
-                software developed by Adobe Inc., designed
-                for creating and manipulating scalable
-                illustrations and artworks.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(9)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        
-        
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/coreldraw-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">CorelDRAW</div>
-              <p class="p">CorelDRAW is a vector graphics editor that
-                provides powerful tools for designing and
-                creating illustrations, logos, and layouts.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(10)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        
-        
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/animation-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">ANIMATION</div>
-              <p class="p">Animation is the process of creating the
-                illusion of motion through a rapid display of
-                images, frames, or objects.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(11)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        
-        
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/graphic-design-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">GRAPHIC DESIGN</div>
-              <p class="p">Graphic design is the art of visually
-                communicating ideas and information
-                through a combination of images,
-                typography, and layout.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(12)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        
-         
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/video-editing-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">VIDEO EDITING</div>
-              <p class="p">Video editing is the process of manipulating
-                and rearranging video clips to create a
-                cohesive and compelling visual narrative.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(13)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        
-        
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/course/ui_ux-bnr.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">ui ux</div>
-              <p class="p">UI/UX Crafting a visually appealing and
-                intuitively designed digital experience,
-                prioritizing both aesthetic elements and user
-                satisfaction throughout the interaction.</p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(14)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-        <button class="accordion menu">LOGISTICS <i class="fa-solid fa-caret-right"></i></button>
-        <div class="panel">
-          <!-- logistics -->
-          <div class="card mt-4">
-            <div class="img-div">
-              <img src="assets/img/banner/course/logistics.jpg" class="w-100" alt="" srcset="">
-            </div>
-            <div class="card-body">
-              <div class="first-part">
-                <div class="card-title">LOGISTICS</div>
-              <p class="p">Logistics and supply chain management encompass the strategic coordination and
-                execution of activities involved in the efficient movement </p>
-              </div>
-              <div class="second-part">
-                <p class="p cors-dr mb-0 fw-600">3 Months | Weekday | Classroom</p>
-                <div class="rating mb-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star pr-2"></i>
-                  4.9
-                </div>
-                <div class="buttons-div row">
-                  <div class="col-lg-6 col-6">
-                    <button class="apply" onclick="apply(1)">Apply Now</button>
-                  </div>
-                  <div class="col-lg-6 col-6">
-                    <button class="more" onclick="course(17)">Know More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="duration"><span class="img"><img src="assets/img/logo/Thiranz Tech Solutions Logo-png.png" class="h-100" alt="" srcset=""></span><span class="txt-part">100% job assured <br> program </span></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
 <!--.......................................................- section-3 course END -..........................................................-->
 
 <!--...............- section-7 -...................-->
@@ -3072,16 +832,7 @@ removeRevealClass();
 </section>
 <!--.......................................................- section-6 END -..........................................................-->
 
-<!--...............- section-8 -...................-->
-<section class="section-8">
-  <div class="container">
-    <div class="row">
-      <h3 style="text-align: center;font-weight: 600;">Our Students Work at</h3>
-      <img src="assets/img/banner/student-placement.png" width="100%" alt="" srcset="">
-    </div>
-  </div>
-</section>
-<!--.......................................................- section-8 END -..........................................................-->
+
 
 <!--...............- section-4 why choose us -...................-->
 <section class="section-4">
