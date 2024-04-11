@@ -101,8 +101,11 @@
 
 /*.....................................- common styles -.........................................*/
 html{
+    width: 100%;
+  overflow-x: hidden;
 *{
   font-family: var(--ubuntu-font);
+}
 }
 body{
   scroll-behavior: smooth;
@@ -858,15 +861,33 @@ html{
   }
                /* ............. navbar in mobile ..................... */
                @media screen and (max-width:765px) {
-                header{
+                html header{
                   width: 100%;
                   overflow-x: hidden;
+                  padding-top: 100px;
                 }
                 body{
                   width: 100%;
                   overflow-x: hidden;
                 }
+                html .header-banner-div .bnr-img-prt .img-div{
+                  height: fit-content;
+                  .col-6 .card{
+                    height: 150px;
+                  }
+                }
+                header .navbar .navbar-brand img{
+                  height: 30px;
+                  margin: auto;
+                }
+                header .navbar.scrolled .navbar-brand img{
+                  height: 30px;
+                  margin: auto;
+                }
                 header .navbar{
+                  .navbar-brand img{
+                    height: 30px;
+                  }
                   .crs-menu-btn{ /* navbar course button */
                     color: white;
                     border: 0;

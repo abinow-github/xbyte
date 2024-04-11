@@ -293,12 +293,14 @@
       var load = document.getElementById("preloader");
       let header = document.getElementById("hdr");
       let bnr = document.getElementById('banner');
+      setTimeout(function () {
+              load.classList.add('hide');
+            }, 500)
       window.onload = function () {
             setTimeout(function () {
-              load.classList.add('hide');
               bnr.classList.add('show');
               load.classList.remove('show');
-            }, 500);
+            }, 800);
       };
        </script>
       
