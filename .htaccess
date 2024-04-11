@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^home$ index.html [L]
+RewriteRule ^about$ about.html [L]
+RewriteRule ^contact$ contact.html [L]
+RewriteRule ^gallery$ gallery.html [L]
+
+RewriteRule ^certificate-in-finance-and-accounts$ course-1.html [L]
+RewriteRule ^diploma-in-finance-and-accounts$ course-2.html [L]
+RewriteRule ^advanced-diploma-in-finance-and-accounts$ course-3.html [L]
+RewriteRule ^post-graduate-diploma-in-finance-and-accounts$ course-4.html [L]
+RewriteRule ^post-graduate-diploma-in-finance-and-accounts-ielts$ course-5.html [L]

@@ -161,41 +161,15 @@ function toggleNavbar() {
 //////home page course cards onclick(course)
 function course(a) {
   if(a==2){
-    window.location.href = 'java.html';
+    window.location.href = 'certificate-in-finance-and-accounts';
   }else if(a==1){
-    window.location.href = 'https://www.thiranzerptraininginstitute.com/';
+    window.location.href = 'diploma-in-finance-and-accounts';
   }else if(a==3){
-    window.location.href = 'python.html';
+    window.location.href = 'advanced-diploma-in-finance-and-accounts';
   }else if(a==4){
-    window.location.href = 'full_stack.html';
+    window.location.href = 'post-graduate-diploma-in-finance-and-accounts';
   }else if(a==5){
-    window.location.href = 'data_science.html';
-  }else if(a==6){
-    window.location.href = 'data_analytics.html';
-  }else if(a==7){
-    window.location.href = 'webdesigning.html';
-  }else if(a==8){
-    window.location.href = 'photoshop.html';
-  }else if(a==9){
-    window.location.href = 'illustrator.html';
-  }else if(a==10){
-    window.location.href = 'coreldraw.html';
-  }else if(a==11){
-    window.location.href = 'animation.html';
-  }else if(a==12){
-    window.location.href = 'graphic_design.html';
-  }else if(a==13){
-    window.location.href = 'video_editing.html';
-  }else if(a==14){
-    window.location.href = 'ui_ux.html';
-  }else if(a==15){
-    window.location.href = 'software_testing.html';
-  }
-  else if(a==16){
-    window.location.href = 'aws.html';
-  }
-  else if(a==17){
-    window.location.href = 'logistics_and_supply_chain.html';
+    window.location.href = 'post-graduate-diploma-in-finance-and-accounts-ielts';
   }
   
 }
@@ -242,3 +216,9 @@ $(document).on('click', '.crs-popup', function(e) {
     $(this).removeClass('show');
   }
 });
+
+
+
+/////////course heading slider
+var copy = document.querySelector(".heading-slide").cloneNode(true);
+document.querySelector(".heading-slider").appendChild(copy);

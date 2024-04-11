@@ -7758,7 +7758,6 @@
     text-align: center;
     padding: 7em 0; }
     footer ul{
-        display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
@@ -7772,8 +7771,89 @@
     }
   
   .footer-04 {
-    background: #4e4a97;
-    padding-bottom: 0; }
+    background: linear-gradient(112deg, #1e587b, #47b970);
+    padding-bottom: 0;
+    position: relative;
+    .logo-circle{
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background-color: white;
+      top: 0;
+      z-index: 5;
+      padding: 30px;
+      background: linear-gradient(112deg, #1e587b, #47b970);
+      transform: translateY(-50%);
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      right: 0;
+      margin: auto;
+      .logo{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .instagram-div{/* footer instagram part */
+      .row{
+        justify-content: center;
+      }
+      a{
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        margin: 3px;
+      }
+      a img{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        object-fit: cover;
+      }
+      
+      a.logo img{
+        object-fit: contain;
+        padding: 3px;
+      }
+    
+  }
+    
+    .row.sci-mdia-row{
+      justify-content: center;
+      gap: 5px;
+      padding-bottom: 20px;
+      a{
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        height: 40px;
+        width: 40px;
+        display: block;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+        position: relative;
+        border-radius: 4px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+          font-size: 20px;
+        }
+      }
+    }
+    .logo-circle::before{
+      content: '';
+      width: 95%;
+      height: 95%;
+      position: absolute;
+      background: white;
+      z-index: -1;
+      border-radius: 50%;
+    } 
+  }
     .footer-04 .border-top {
       border-color: #2b276c !important;
       background: #2b276c; }
